@@ -1,10 +1,8 @@
-	html, body
-	{
+	html, body {
 		height: 100%;
 	}
 
-	body
-	{
+	body {
 		margin: 0px;
 		padding: 0px;
 		background: #5282C7;
@@ -15,58 +13,43 @@
 	}
 
 
-	h1, h2, h3
-	{
+	h1, h2, h3 {
 		margin: 0;
 		padding: 0;
 		font-weight: 700;
 		color: #2B3F48;
 	}
 
-	p, ol, ul
-	{
+	p, ol, ul {
 		margin-top: 0;
 	}
 
-	ol, ul
-	{
+	ol, ul {
 		padding: 0;
 		list-style: none;
 	}
 
-	ul.actions
-	{
+	ul.actions {
 		text-align: center;
 	}
 
-		ul.actions li
-		{
-		}
-
-	p
-	{
+	p {
 		line-height: 180%;
 	}
 
-	strong
-	{
-	}
-
-	a
-	{
+	a {
 		color: #0000FF;
 	}
 
-	a:hover
-	{
+	a:hover {
 		text-decoration: none;
 	}
 
-	.container
-	{
+	.container {
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1000px;
+		/* width: 1000px; */
+		max-width: 1000px;
 	}
 
 /*********************************************************************************/
@@ -385,8 +368,7 @@ button.icon,
 
 	.box1,
 	.box2,
-	.box3,
-	{
+	.box3 {
 		float: left;
 		margin-right: 20px;
 	}
@@ -534,11 +516,13 @@ button.icon,
 	#banner
 	{
 		overflow: hidden;
-		padding: 10em 0em;
-		background: url(img/SeruesCup2020.jpeg) no-repeat center;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/SeruesCup2020.jpeg");
+		background-repeat: no-repeat;
+		background-position: center center;
 		background-size: cover;
 		text-align: center;
 		color: rgba(255,255,255,.8);
+		/* height: 750px; */
 	}
 
 	#banner .title
@@ -632,83 +616,96 @@ button.icon,
 /* Featured                                                                      */
 /*********************************************************************************/
 
-	#featured
-	{
+	#featured {
 		overflow: hidden;
-		padding: 5em 0em;
-		background: #5282c7;
+		padding: 15em;
 		color: rgba(255,255,255,.8);
 		text-align: center;
 	}
 
-	#featured a
-	{
+	#featured a {
 		color: rgba(255,255,255,1);
 	}
 
-	#featured .button
-	{
+	#featured .button {
 		background: #FFF;
 		margin-top: 3em;
 		font-size: 1em;
-		color: #79C255;
+		color: #fff;
 	}
 
-	#featured .title
-	{
+	#featured .title {
+		margin: 0;
 	}
 
-	#featured .title h2
-	{
+	#featured .title h2 {
 		color: #FFF;
 	}
 
-	#featured .title .byline
-	{
-		color: rgba(255,255,255,.6);
+	#featured .title .byline {
+		color: #ddd;
 	}
 
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
 
-.box
-{
+.box {
 	padding: 3em 2em 2em 2em;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 8px;
-		text-align: center;
+	text-align: center;
 }
 
 
-	#extra
-	{
+	#extra {
 		overflow: hidden;
 		padding: 5em 0em;
 	}
 
-	#extra .title
-	{
+	#extra .title {
 		text-align: center;
 	}
 
-	#extra .button
-	{
-		margin-top: 5em;
-	}
-
-	#extra .fa
-	{
+	#extra .fa {
 		display: block;
 		margin-bottom: 0.5em;
 		text-align: center;
 		font-size: 3em;
 	}
 
-	.gallery
-	{
+	.gallery {
 		overflow: hidden;
 		margin-bottom: 3em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: space-between;
+	}
+
+	.gallery__img {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 200px;
+		width: 100%;
+		margin: 0 10px;
+	}
+
+	.gallery__img1 {
+		background-image: url('images/pic01.jpg');
+	}
+
+	.gallery__img2 {
+		background-image: url('images/pic02.jpg');
+	}
+
+	.gallery__img3 {
+		background-image: url('images/pic03.jpg');
+	}
+
+	.action {
+		text-align: center;
 	}
 
 	/***************/
@@ -797,15 +794,47 @@ button.icon,
 
 .box.person {
 	border: solid 1px rgba(255, 255, 255, 0.25);
-	padding: 3em 1.5em;
+	padding: 1.5em;
 }
 
 .box.person h3 {
-			margin: 0;
+	margin: 0;
 }
+
 .box.person .image {
-		margin-bottom: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 1em;
+	border-radius: 8px;
 }
+
+.box.person .image__jeremey {
+	/* missing image */
+}
+
+.box.person .image__lou {
+	/* missing image */
+}
+
+.box.person .image__andrew {
+	/* missing image */
+}
+
+.box.person .image__ryan {
+	background-image: url('images/profiles/RyanKish.jpg');
+}
+
+.box.person .image__alyson {
+	/* missing image */
+}
+
+.box.person .image__conor {
+	/* missing image */
+}
+
 
 	.box.person .image img {
 		max-width: 100%;

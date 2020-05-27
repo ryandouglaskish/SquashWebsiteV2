@@ -171,109 +171,7 @@ button.icon,
 		display: none;
 	}
 
-	.my_social ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
 
-		.my_social ul li {
-			padding-left: 0.5em;
-		}
-
-		.my_social ul.alt {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			.my_social ul.alt li {
-				border-top: solid 1px #dbdbdb;
-				padding: 0.5em 0;
-			}
-
-				.my_social ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-	.my_social ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
-	}
-
-	.my_social	ul.icons li {
-			display: inline-block;
-			padding: 0 1em 0 0;
-		}
-
-			.my_social ul.icons li:last-child {
-				padding-right: 0;
-			}
-
-			.my_social ul.icons li .icon:before {
-				font-size: 2em;
-			}
-
-			@media screen and (max-width: 480px) {
-
-			.my_social ul.actions li > *.icon:before {
-				margin-left: -2em;
-			}
-}
-.my_social ul.icons li .icon {
-	font-size: 0.58em;
-}
-.my_social ul {
-	list-style: none;
-}
-.my_social {
-	color: #9a9a9a;
-	font-family: "Raleway", Arial, Helvetica, sans-serif;
-	font-size: 13pt;
-	font-weight: 300;
-	line-height: 1.65;
-	font-size: 100%;
-
-	font: inherit;
-
-}
-@media screen and (max-width: 736px) {
-
-	.my_social ul {
-		-ms-flex-order: 1;
-		-moz-order: 1;
-		-webkit-order: 1;
-		-ms-order: 1;
-		order: 1;
-	}
-
-	.my_social .flex {
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		text-align: center;
-
-		display: -ms-flexbox;
-		-ms-flex-wrap: wrap;
-		-ms-flex-pack: justify;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-
-
-
-	}
-}
 
 
 	/* ul.contact
@@ -443,7 +341,7 @@ button.icon,
 		float: right;
 	}
 
-	#wrapper
+	#root
 	{
 		background: #FFF;
 	}
@@ -479,6 +377,14 @@ button.icon,
 		text-decoration: none;
 		text-transform: uppercase;
 		color: #0F2D5B;
+	}
+	#logo img {
+		max-width: 100%;
+		max-height: 60px;
+		display: block;
+		padding-top: 4px;
+		margin-left: 0px;
+		left: 0;
 	}
 
 /*********************************************************************************/
@@ -532,10 +438,10 @@ button.icon,
 	}
 
 /*********************************************************************************/
-/* Banner                                                                        */
+/* home_img                                                                        */
 /*********************************************************************************/
 
-	#banner
+	#home_img
 	{
 		overflow: hidden;
 		/* padding: 10em 0em; */
@@ -549,23 +455,23 @@ button.icon,
 
 	}
 
-	#banner .title
+	#home_img .title
 	{
 		margin-bottom: 1em;
 		text-transform: uppercase !important;
 	}
 
-	#banner .title h2
+	#home_img .title h2
 	{
 		color: #FFF;
 	}
 
-	#banner .title .byline
+	#home_img .title .byline
 	{
 		color: rgba(255,255,255,.6);
 	}
 
-	#banner .button
+	#home_img .button
 	{
 		margin-top: 3em;
 		background: #589937 !important;
@@ -613,23 +519,32 @@ button.icon,
 	}
 
 	.icons {
-	{				width: 100%;
+
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		margin-bottom: 5em;
 	}
+
 	.icons i {
-		color: #fff;
-		font-size: 1.5em;
+
+		font-size: 3em;
 		margin: 0 8px;
 		border: 3px solid #fff;
 		border-radius: 50%;
 		width: 1em;
 		height: 1em;
-		padding: 10px;
+		padding: 1px;
 		text-align: center;
-	}			}
+	}
+	.fa-facebook-f {
+		color: #0F2D5B;
+	}
 
+	.fa-instagram {
+		color: #0F2D5B;
+	}
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
@@ -645,7 +560,7 @@ button.icon,
 	{
 		text-align: center;
 		font-size: 1em;
-		color: rgba(255,255,255,0.5);
+		color: #0F2D5B;
 	}
 
 	#copyright a

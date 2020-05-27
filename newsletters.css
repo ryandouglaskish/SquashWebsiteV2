@@ -1,0 +1,92 @@
+	html, body
+	{
+		height: 100%;
+	}
+
+	body
+	{
+		margin: 10em;
+		padding: 0px;
+		background: #fffeed;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 10pt;
+		font-weight: 200;
+		color: #000000;
+	}
+
+/* .action {
+	padding: 9px;
+	background-color: #5385c1;
+	color: #0F2D5B; */
+}
+
+.action {
+	text-align: center;
+}
+
+form {
+
+}
+
+.button
+{
+	position:relative;
+	border:none;
+	display: inline-block;
+	padding: 0em 3em;
+	margin: 0px;
+	background: #0F2D5B;
+	border-radius: 8px;
+	letter-spacing: 0.20em;
+	line-height: 4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+}
+
+
+a:hover
+{
+	text-decoration: none;
+}
+
+
+img {
+	max-height: 500px;
+	display: block;
+   margin-left: auto;
+   margin-right: auto;
+	 margin-bottom: 40px;
+ }
+
+
+	h1, h2, h3
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+ 		margin-top: 10px;
+		padding: 0;
+		font-weight: 700;
+	}
+	h1 {
+		color: #000000;
+	}
+	h3 {
+		color: #505050;
+	}
+
+
+p {
+	margin-top: 20px;
+}
+
+.questions {
+	color: #505050;
+}
+
+.footer {
+	padding-top: 1em;
+	padding-bottom: 8em;
+}

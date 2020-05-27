@@ -17,13 +17,35 @@
 
 	h1, h2, h3
 	{
-		margin: 0;
+		/* margin: 0; */
 		padding: 0;
 		font-weight: 700;
 		color: #2B3F48;
 		/* TODO: change color */
 
+
 	}
+
+	h3.name {
+		font-variant: small-caps;
+	}
+
+	p.role {
+		font-size: 1.1em;
+		font-variant: small-caps;
+		margin: 0px;
+	}
+
+	p.studies {
+		font-size: .85em;
+		margin: 0px;
+	}
+	p.hometown {
+		font-size: .85em;
+		margin: 0px;
+	}
+
+
 
 	p, ol, ul
 	{
@@ -174,54 +196,6 @@ button.icon,
 
 
 
-	/* ul.contact
-	{
-		margin: 0;
-		padding: 2em 0em 0em 0em;
-		list-style: none;
-	}
-
-	ul.contact li
-	{
-		display: inline-block;
-		padding: 0em 0.30em;
-		font-size: 1em;
-	}
-
-	ul.contact li span
-	{
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	ul.contact li a
-	{
-		color: #FFF;
-	}
-
-	ul.contact li a:before
-	{
-		display: inline-block;
-		background: #3f3f3f;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		border-radius: 20px;
-		text-align: center;
-		color: #FFFFFF;
-	}
-
-	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
-	ul.contact li a.icon-facebook:before { background: #39599F; }
-	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
-	ul.contact li a.icon-tumblr:before { background: #31516A; }
-	ul.contact li a.icon-rss:before { background: #F2600B; } */
-
-/*********************************************************************************/
-/* Button Style                                                                  */
-/*********************************************************************************/
-
 	.button
 	{
 		display: inline-block;
@@ -307,8 +281,19 @@ button.icon,
 	.boxC
 	{
 		width: 320px;
+		height: 250px;
 	}
 
+	.boxA img {
+		width: 100%;
+	}
+	.boxB img {
+		width: 100%;
+	}
+
+	.boxC img {
+		width: 100%;
+	}
 	.boxA,
 	.boxB
 	{
@@ -644,11 +629,48 @@ button.icon,
 	{
 		color: #FFF;
 	}
-	#featured .title .byline
+	#homefeatured .title .byline
 	{
 		color: #ddd;
 	}
 
+
+	#contact
+	{
+		overflow: hidden;
+		padding: 1.5em 0em;
+		background: #5385c1;
+		/* color: #0F2D5B;; */
+		text-align: center;
+	}
+
+
+	#contact a
+	{
+		color: rgba(255,255,255,1);
+	}
+
+	#contact .button
+	{
+		background: #FFF;
+		margin-top: .1em;
+		font-size: 1em;
+		color: #0F2D5B;
+	}
+
+	#contact .title
+	{
+	}
+
+	#contact .title h2
+	{
+		color: #0F2D5B;
+	}
+
+	#contact .title .byline
+	{
+		color: rgba(255,255,255,.6);
+	}
 
 
 /*********************************************************************************/
@@ -707,13 +729,13 @@ button.icon,
 			margin: 0 10px;
 		}
 		.gallery__img1 {
-			background-image: url('images/pic01.jpg');
+			background-image: url('images/gallery/img1.jpg');
 		}
 		.gallery__img2 {
-			background-image: url('images/pic02.jpg');
+			background-image: url('images/gallery/img2.jpg');
 		}
 		.gallery__img3 {
-			background-image: url('images/pic03.jpg');
+			background-image: url('images/gallery/img3.jpg');
 		}
 		.action {
 			text-align: center;

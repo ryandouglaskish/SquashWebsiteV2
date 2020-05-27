@@ -7,11 +7,11 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #5282C7;
+		background: #fffeed;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11pt;
 		font-weight: 200;
-		color: ##5282c7;
+		color: #fffeed;
 	}
 
 
@@ -21,6 +21,8 @@
 		padding: 0;
 		font-weight: 700;
 		color: #2B3F48;
+		/* TODO: change color */
+
 	}
 
 	p, ol, ul
@@ -66,7 +68,7 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1000px;
+		max-width: 1000px;
 	}
 
 /*********************************************************************************/
@@ -133,8 +135,148 @@
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
 /*********************************************************************************/
+input[type="submit"].icon,
+input[type="reset"].icon,
+input[type="button"].icon,
+button.icon,
+.button.icon {
+	padding-left: 1.35em;
+}
 
-	ul.contact
+	input[type="submit"].icon:before,
+	input[type="reset"].icon:before,
+	input[type="button"].icon:before,
+	button.icon:before,
+	.button.icon:before {
+		margin-right: 0.5em;
+	}
+
+
+.icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+}
+
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+
+	.icon > .label {
+		display: none;
+	}
+
+	.my_social ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		.my_social ul li {
+			padding-left: 0.5em;
+		}
+
+		.my_social ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			.my_social ul.alt li {
+				border-top: solid 1px #dbdbdb;
+				padding: 0.5em 0;
+			}
+
+				.my_social ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+	.my_social ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.my_social	ul.icons li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+		}
+
+			.my_social ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+			.my_social ul.icons li .icon:before {
+				font-size: 2em;
+			}
+
+			@media screen and (max-width: 480px) {
+
+			.my_social ul.actions li > *.icon:before {
+				margin-left: -2em;
+			}
+}
+.my_social ul.icons li .icon {
+	font-size: 0.58em;
+}
+.my_social ul {
+	list-style: none;
+}
+.my_social {
+	color: #9a9a9a;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: 300;
+	line-height: 1.65;
+	font-size: 100%;
+
+	font: inherit;
+
+}
+@media screen and (max-width: 736px) {
+
+	.my_social ul {
+		-ms-flex-order: 1;
+		-moz-order: 1;
+		-webkit-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+
+	.my_social .flex {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+
+		display: -ms-flexbox;
+		-ms-flex-wrap: wrap;
+		-ms-flex-pack: justify;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+
+
+
+	}
+}
+
+
+	/* ul.contact
 	{
 		margin: 0;
 		padding: 2em 0em 0em 0em;
@@ -176,7 +318,7 @@
 	ul.contact li a.icon-facebook:before { background: #39599F; }
 	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
 	ul.contact li a.icon-tumblr:before { background: #31516A; }
-	ul.contact li a.icon-rss:before { background: #F2600B; }
+	ul.contact li a.icon-rss:before { background: #F2600B; } */
 
 /*********************************************************************************/
 /* Button Style                                                                  */
@@ -186,7 +328,7 @@
 	{
 		display: inline-block;
 		padding: 0em 3em;
-		background: #79C255;
+		background: #0F2D5B;
 		border-radius: 8px;
 		letter-spacing: 0.20em;
 		line-height: 4em;
@@ -208,6 +350,8 @@
 		border-radius: 20px;
 		text-align: center;
 		color: #272925;
+		/* TODO: change color */
+
 	}
 
 /*********************************************************************************/
@@ -216,7 +360,7 @@
 
 	.title
 	{
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 
 	.title h2
@@ -311,7 +455,7 @@
 	#header
 	{
 		position: relative;
-		padding: 5em 0em;
+		padding: 3em 0em;
 	}
 
 /*********************************************************************************/
@@ -321,20 +465,20 @@
 	#logo
 	{
 		position: absolute;
-		top: 4em;
+		bottom: 1em;
 		left: 0;
 	}
 
 	#logo h1
 	{
-		color: #79C255;
+		color: #0F2D5B;
 	}
 
 	#logo a
 	{
 		text-decoration: none;
 		text-transform: uppercase;
-		color: #79C255;
+		color: #0F2D5B;
 	}
 
 /*********************************************************************************/
@@ -344,7 +488,7 @@
 	#menu
 	{
 		position: absolute;
-		top: 4.5em;
+		/* top: 4.5em; */
 		right: 0;
 	}
 
@@ -377,8 +521,8 @@
 
 	#menu .current_page_item a
 	{
-		border: 2px solid #79C255;
-		background: #79C255;
+		border: 2px solid #0F2D5B;
+		background: #0F2D5B;
 		border-radius: 6px;
 		color: #FFF;
 	}
@@ -394,11 +538,15 @@
 	#banner
 	{
 		overflow: hidden;
-		padding: 10em 0em;
-		background: url(img/SeruesCup2020.jpeg) no-repeat center;
+		/* padding: 10em 0em; */
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/SeruesCup2020.jpeg");
+		background-repeat: no-repeat;
+		background-position: center center;
 		background-size: cover;
 		text-align: center;
 		color: rgba(255,255,255,.8);
+		/* height: 750px; */
+
 	}
 
 	#banner .title
@@ -464,6 +612,24 @@
 	{
 	}
 
+	.icons {
+	{				width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.icons i {
+		color: #fff;
+		font-size: 1.5em;
+		margin: 0 8px;
+		border: 3px solid #fff;
+		border-radius: 50%;
+		width: 1em;
+		height: 1em;
+		padding: 10px;
+		text-align: center;
+	}			}
+
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
@@ -495,11 +661,12 @@
 	#featured
 	{
 		overflow: hidden;
-		padding: 5em 0em;
-		background: #5282c7;
-		color: rgba(255,255,255,.8);
+		padding: 1.5em 0em;
+		background: #fffeed;
+		/* color: #0F2D5B;; */
 		text-align: center;
 	}
+
 
 	#featured a
 	{
@@ -509,9 +676,9 @@
 	#featured .button
 	{
 		background: #FFF;
-		margin-top: 3em;
+		margin-top: .1em;
 		font-size: 1em;
-		color: #79C255;
+		color: #0F2D5B;
 	}
 
 	#featured .title
@@ -520,13 +687,54 @@
 
 	#featured .title h2
 	{
-		color: #FFF;
+		color: #0F2D5B;
 	}
 
 	#featured .title .byline
 	{
 		color: rgba(255,255,255,.6);
 	}
+
+	#homefeatured
+	{
+		overflow: hidden;
+		padding: 15em;
+		color: rgba(255,255,255,.8);
+		/* color: #0F2D5B;; */
+		text-align: center;
+	}
+
+
+	#homefeatured a
+	{
+		color: rgba(255,255,255,1);
+	}
+
+	#homefeatured .button
+	{
+		background: #FFF;
+		margin-top: .1em;
+		font-size: 1em;
+		background: #fffeed;
+		color: #fff;
+	}
+
+	#homefeatured .title
+	{
+		margin: 0;
+
+	}
+
+	#homefeatured .title h2
+	{
+		color: #FFF;
+	}
+	#featured .title .byline
+	{
+		color: #ddd;
+	}
+
+
 
 /*********************************************************************************/
 /* Featured                                                                      */
@@ -537,7 +745,7 @@
 	padding: 3em 2em 2em 2em;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 8px;
-		text-align: center;
+	text-align: center;
 }
 
 
@@ -554,7 +762,7 @@
 
 	#extra .button
 	{
-		margin-top: 5em;
+		/* margin-top: 5em; */
 	}
 
 	#extra .fa
@@ -565,11 +773,36 @@
 		font-size: 3em;
 	}
 
+
 	.gallery
 	{
 		overflow: hidden;
 		margin-bottom: 3em;
-	}
+		display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: space-between;
+		}
+		.gallery__img {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			height: 200px;
+			width: 100%;
+			margin: 0 10px;
+		}
+		.gallery__img1 {
+			background-image: url('images/pic01.jpg');
+		}
+		.gallery__img2 {
+			background-image: url('images/pic02.jpg');
+		}
+		.gallery__img3 {
+			background-image: url('images/pic03.jpg');
+		}
+		.action {
+			text-align: center;
+		}
 
 	/***************/
 
@@ -626,9 +859,20 @@
 		width: 21%;
 	}
 
+	.flex.flex-2 article {
+			width: 47%;
+		}
+
 	@media screen and (max-width: 980px) {
 	.flex.flex-4 .box {
 		width: 47%;
+	}
+	.flex.flex-2 article {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+	.flex.flex-2 article:last-child {
+		margin-bottom: 0;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -660,12 +904,75 @@
 	padding: 3em 1.5em;
 }
 
+
 .box.person h3 {
 			margin: 0;
 }
 .box.person .image {
-		margin-bottom: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+	width: 100%;
+	margin-bottom: 1em;
+	border-radius: 160px;
 }
+.box.person .image__JeremeyWaldman {
+	background-image: url('images/profiles/JeremyWaldman.jpeg');
+}
+.box.person .image__LouAlpert {
+	background-image: url('images/profiles/LouAlpert.jpeg');
+}
+.box.person .image__AndrewGarver {
+	background-image: url('images/profiles/AndrewGarver.jpeg');
+}
+.box.person .image__RyanKish {
+	background-image: url('images/profiles/RyanKish.jpg');
+}
+.box.person .image__AlysonChatterjee {
+	background-image: url('images/profiles/AlysonChatterjee.jpeg');
+}
+.box.person .image__ConorHynes {
+	background-image: url('images/profiles/ConorHynes.jpeg');
+}
+.box.person .image__AnouragShah {
+	background-image: url('images/profiles/AnouragShah.jpeg');
+}
+.box.person .image__AkshatMantri {
+	background-image: url('images/profiles/AkshatMantri.jpg');
+}
+.box.person .image__AkikKothekar {
+	background-image: url('images/profiles/AkikKothekar.jpeg');
+}
+.box.person .image__BrendanDoherty {
+	background-image: url('images/profiles/BrendanDoherty.jpeg');
+}
+.box.person .image__DanMaguire {
+	background-image: url('images/profiles/DanMaguire.jpeg');
+}
+.box.person .image__GauravShekhawat {
+	background-image: url('images/profiles/GauravShekhawat.jpeg');
+}
+.box.person .image__DucMinhNgo {
+	background-image: url('images/profiles/DucMinhNgo.jpeg');
+}
+.box.person .image__JackieHager {
+	background-image: url('images/profiles/JackieHager.jpeg');
+}
+.box.person .image__JimmySieber {
+	background-image: url('images/profiles/JimmySieber.jpeg');
+}
+.box.person .image__NikhilPunshi {
+	background-image: url('images/profiles/NikhilPunshi.jpeg');
+}
+.box.person .image__PulakTaneja {
+	background-image: url('images/profiles/PulakTaneja.jpeg');
+}
+.box.person .image__YajwinJain {
+	background-image: url('images/profiles/YajwinJain.jpeg');
+}
+
+
 
 	.box.person .image img {
 		max-width: 100%;
@@ -757,6 +1064,35 @@
 			section.wrapper.style1, article.wrapper.style1 {
 				background: #5385c1;
 				color: #bacee6;
+			}
+
+			#newsletter {
+				background: white;
+				color: grey;
+			}
+
+			#newsletter .inner {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 60px;
+			}
+
+			#newsletter .image {
+				flex: 0.5;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				height: 300px;
+				width: 100%;
+				border-radius: 8px;
+			}
+
+			.image__historic-polo {
+				background-image: url('images/newsletter/historicpolo.png');
+			}
+
+			.image__team-dinner {
+				background-image: url('images/newsletter/teamdinner2020.JPG');
 			}
 
 				section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
